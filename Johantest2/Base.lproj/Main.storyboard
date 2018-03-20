@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2ww-07-QML">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AZ-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalZoundz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HMw-do-RHx">
+                                <rect key="frame" x="0.0" y="220" width="375" height="558"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="JwH-gM-9fO">
+                                    <size key="itemSize" width="120" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="hqg-c9-LZC" customClass="CustomCollectionViewCell" customModule="AnimalZoundz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Duck" translatesAutoresizingMaskIntoConstraints="NO" id="RtE-OA-Hdn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCx-X5-0zg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                                    <connections>
+                                                        <action selector="Ljud:" destination="hqg-c9-LZC" eventType="touchUpInside" id="lWV-jH-0cl"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sj2-8A-Hcm">
+                                                    <rect key="frame" x="95" y="0.0" width="25" height="25"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="d2D-lK-hol"/>
+                                                        <constraint firstAttribute="width" constant="25" id="sTh-Y5-xHo"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="fav:" destination="hqg-c9-LZC" eventType="touchUpInside" id="KmK-lZ-bD2"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="RtE-OA-Hdn" secondAttribute="bottom" id="1jb-dl-IJL"/>
+                                            <constraint firstItem="OCx-X5-0zg" firstAttribute="leading" secondItem="hqg-c9-LZC" secondAttribute="leading" id="D0T-cN-FKE"/>
+                                            <constraint firstItem="Sj2-8A-Hcm" firstAttribute="top" secondItem="hqg-c9-LZC" secondAttribute="top" id="GdI-D9-t4l"/>
+                                            <constraint firstAttribute="bottom" secondItem="OCx-X5-0zg" secondAttribute="bottom" id="GfE-Be-AxT"/>
+                                            <constraint firstItem="RtE-OA-Hdn" firstAttribute="leading" secondItem="hqg-c9-LZC" secondAttribute="leading" id="Sx8-C6-fJg"/>
+                                            <constraint firstAttribute="trailing" secondItem="RtE-OA-Hdn" secondAttribute="trailing" id="Zc4-zs-OgF"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sj2-8A-Hcm" secondAttribute="trailing" id="eho-c8-hdW"/>
+                                            <constraint firstItem="RtE-OA-Hdn" firstAttribute="top" secondItem="hqg-c9-LZC" secondAttribute="top" id="i8m-gv-SFV"/>
+                                            <constraint firstAttribute="trailing" secondItem="OCx-X5-0zg" secondAttribute="trailing" id="jKn-yx-9iI"/>
+                                            <constraint firstItem="OCx-X5-0zg" firstAttribute="top" secondItem="hqg-c9-LZC" secondAttribute="top" id="k3t-S8-fq6"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="ImageCell" destination="RtE-OA-Hdn" id="gdJ-nK-mqz"/>
+                                            <outlet property="favButton" destination="Sj2-8A-Hcm" id="eWA-C4-ClI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9224427342414856" green="0.92424517869949341" blue="0.90730190277099609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HMw-do-RHx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="H33-U1-kQx"/>
+                            <constraint firstItem="HMw-do-RHx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ObQ-QM-FZL"/>
+                            <constraint firstItem="HMw-do-RHx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="RlO-rb-4HG"/>
+                            <constraint firstItem="HMw-do-RHx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="X4j-27-7JY"/>
+                            <constraint firstItem="HMw-do-RHx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cDK-KH-gda"/>
+                            <constraint firstItem="HMw-do-RHx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wA3-1l-BZq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="AZ" id="Kn5-fa-L4r" userLabel="All Animals ">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="9bV-J6-hKu">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dcs-Xm-OHA">
+                                <rect key="frame" x="16" y="4" width="53" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="showAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rpl-vK-xjF"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="zOW-Ah-Sca">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lqS-RY-WZ8">
+                                <rect key="frame" x="267" y="0.66666666666666785" width="92" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Favorites"/>
+                                <connections>
+                                    <action selector="showFavs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9se-Ks-Myx"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="HMw-do-RHx" id="0df-aa-qA3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863.2" y="116.00985221674877"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1eI-pZ-T1k">
+            <objects>
+                <viewController id="D4F-B4-UPJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dkk-Sv-VyH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9224427342414856" green="0.92424517869949341" blue="0.90730190277099609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="hOJ-Pi-7Ri"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8o-ZH-nKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fcx-K5-imc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2ww-07-QML" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="72h-Zt-M7P">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.9224427342414856" green="0.92424517869949341" blue="0.90730190277099609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Oin-di-x6m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwz-gS-2bj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2694" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Duck" width="270" height="350"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
